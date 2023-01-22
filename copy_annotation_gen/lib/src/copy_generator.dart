@@ -1,5 +1,5 @@
-import 'package:build/src/builder/build_step.dart';
 import 'package:analyzer/dart/element/element.dart';
+import 'package:build/build.dart';
 import 'package:copy_annotation/copy_annotation.dart';
 import 'package:copy_annotation_gen/src/model_visitor.dart';
 import 'package:source_gen/source_gen.dart';
@@ -30,11 +30,10 @@ class CopyGenerator extends GeneratorForAnnotation<CopyAnnotation> {
   }
 }
 
-
 // extension PersonCopyExt on Person {
 //   Person copy({
-//     String? id, 
-//     String? job, 
+//     String? id,
+//     String? job,
 //     String? name
 //   }) {
 //     return Person(

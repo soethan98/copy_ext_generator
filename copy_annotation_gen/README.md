@@ -11,4 +11,40 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages). 
 -->
 
+
+[![Pub Package](https://img.shields.io/pub/v/copy_annotation_gen.svg)](https://pub.dev/packages/copy_annotation_gen)
+
 Generate `copy` extension for class that annotated with `@copy` from [copy_annotation](https://pub.dev/packages/copy_annotation). 
+
+
+# Installation
+
+``` yaml
+dev_dependencies:
+  ...
+  build_runner: ^latest_version
+  copy_annotation_gen: ^latest_version
+
+  ```
+
+  # Usage
+
+  ```dart
+part 'employee.g.dart'
+
+@copy
+class Employee {
+    final int id;
+    final String name;
+
+    Employee({required this.id,required this.name})
+
+}
+  ```
+
+and run 
+
+```
+flutter pub run build_runner build --delete-conflicting-outputs
+```
+

@@ -6,8 +6,8 @@ targets:
 
 builders:
   generators:
-    target: ":generators"
-    import: "package:generators/generators.dart"
+    target: ":copy_annotation_gen"
+    import: "package:copy_annotation_gen/copy_annotation_gen.dart"
     builder_factories: ["generateCopyExtension"]
     build_extensions: { ".dart": [".g.dart"] }
     auto_apply: dependents
