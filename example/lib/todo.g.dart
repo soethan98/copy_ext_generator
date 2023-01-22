@@ -1,21 +1,21 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'person.dart';
+part of 'todo.dart';
 
 // **************************************************************************
 // CopyGenerator
 // **************************************************************************
 
-extension PersonCopyExt on Person {
-  Person copy({
-    String? id,
-    String? name,
-    String? job,
+extension TodoCopyExt on Todo {
+  Todo copy({
+    int? id,
+    String? note,
+    DateTime? date,
   }) {
-    return Person(
+    return Todo(
       id: id ?? this.id,
-      name: name ?? this.name,
-      job: job ?? this.job,
+      note: note ?? this.note,
+      date: date ?? this.date,
     );
   }
 }
