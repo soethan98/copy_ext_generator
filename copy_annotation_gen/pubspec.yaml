@@ -10,10 +10,10 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  build:
-  source_gen: 
-  copy_annotation:
-    path: ../copy_annotation/
+  build: ^2.3.1
+  source_gen: ^1.2.6
+  copy_annotation: ^0.0.1
+  analyzer: ">=2.0.0 <6.0.0"
 
 dev_dependencies:
   flutter_test:
