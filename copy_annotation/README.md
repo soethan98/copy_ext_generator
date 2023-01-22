@@ -11,10 +11,27 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages). 
 -->
 
-Define annotation used by copy_ext_generator to generate copy extension.
+[![Pub Package](https://img.shields.io/pub/v/copy_annotation.svg)](https://pub.dev/packages/copy_annotation)
 
 
+Automatically create `copy` method for data classes.
+Work together with [copy_annotation_gen](https://pub.dev/packages/copy_annotation_gen) to generate code.
+
+
+
+# Example 
 ```dart
+
+@copy
+class Employee {
+    final int id;
+    final String name;
+
+    Employee({required this.id,required this.name})
+
+}
+
+
 final emp1 = Employee(id:1,name:"John");
 final emp2 = emp1.copy(id:2,name:"Mina");
 ```
