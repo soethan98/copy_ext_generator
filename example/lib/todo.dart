@@ -1,6 +1,5 @@
 
-import 'package:annotations/annotations.dart';
-import 'package:copy_annotation/annotations.dart';
+import 'package:copy_annotation/copy_annotation.dart';
 part 'todo.g.dart';
 
 @copy

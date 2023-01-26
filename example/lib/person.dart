@@ -1,3 +1,4 @@
+import 'package:copy_annotation/copy_annotation.dart';
 import 'package:json_annotation/json_annotation.dart';
 
 part 'person.g.dart';
