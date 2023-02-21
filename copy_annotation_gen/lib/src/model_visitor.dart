@@ -13,6 +13,11 @@ class ModelVisitor extends SimpleElementVisitor<void> {
 
   @override
   void visitFieldElement(FieldElement element) {
-    fields[element.name] = element.type.toString().replaceFirst('*', '');
+    final post = element.type
+        .toString()
+        .lastIndexOf(RegExp(r'\?|\*'))
+        .clamp(0, element.type.toString().length);
+    fields[element.name] =
+        element.type.toString().replaceFirst(RegExp(r'\?|\*'), '', post);
   }
 }
