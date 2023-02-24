@@ -14,8 +14,24 @@ and the Flutter guide for
 [![Pub Package](https://img.shields.io/pub/v/copy_annotation.svg)](https://pub.dev/packages/copy_annotation)
 
 
-Automatically create `copy` method for data classes.
+"copy_annotation" is a annotation based code generation package for Flutter that generates a copyWith method with extension functions for immutable classes.
 Work together with [copy_annotation_gen](https://pub.dev/packages/copy_annotation_gen) to generate code.
+
+# Usage
+
+```yaml
+dependencies:
+  copy_annotation: ^latest_version
+```
+
+Then, you need to add the following dependencies for code generation:
+
+```yaml
+dev_dependencies:
+  build_runner: ^latest_version
+  copy_annotation_gen: ^latest_version
+
+```
 
 
 

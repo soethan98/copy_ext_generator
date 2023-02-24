@@ -1,15 +1,10 @@
-import 'package:example/person.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  final emp1 = Person(id: 'st', job: 'Mobile Developer', name: 'SoeThan');
-  final emp2 = emp1.copy(id: 'mi', job: 'Senior Mobile Engineer', name: 'Mina');
-  debugPrint('Employee ${emp1.name} -- ${emp2.name}');
   runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  
   const MyApp({Key? key}) : super(key: key);
 
   // This widget is the root of your application.
